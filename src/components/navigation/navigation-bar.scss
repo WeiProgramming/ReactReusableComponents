@@ -1,0 +1,22 @@
+#component-navigation-bar {
+    background-color: gray;
+    color: #ffffff;
+    max-height: 60px;
+
+    .nav-container {
+        display: flex;
+        flex-direction: row;
+
+        .nav-item {
+            color: black;
+            list-style-type: none;
+            border-right: 1px solid #8080;
+            margin: 15px;
+
+            a {
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+    }
+}

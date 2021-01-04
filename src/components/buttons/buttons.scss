@@ -1,0 +1,16 @@
+.buttons-container {
+    a {
+        text-decoration: none;
+        color: #000;
+        border: 1px solid #000;
+        margin-right: 5px;
+        padding: 5px;
+        border-radius: 5px;
+        transition: all .25s ease-in-out;
+
+        &:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+}

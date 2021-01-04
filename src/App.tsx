@@ -1,24 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import NavigationBar from './components/navigation/navigation-bar';
+import Buttons from './components/buttons/buttons';
+
+const NavigationItems = {
+  list: [
+    {
+      id: 1111,
+      text: 'Limited-Time Offer',
+      url: 'google.com'
+    },
+    {
+      id: 1112,
+      text: 'FAQs',
+      url: 'google.com'
+    }
+  ]
+}
+
+const buttonsObj = {
+  buttons: [
+    {
+      id: 1,
+      text: 'Click Me',
+      link: 'google.com'
+    },
+    {
+      id: 2,
+      text: 'Click twice',
+      link: 'google.com'
+    },
+    {
+      id: 3,
+      text: 'Click three',
+      link: 'google.com'
+    }
+  ]
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavigationBar NavigationItems={NavigationItems} Alignment="right"></NavigationBar>
+      <Buttons btnObj={buttonsObj}></Buttons>
     </div>
   );
 }
